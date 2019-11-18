@@ -1,0 +1,802 @@
+
+<?php
+error_reporting(0);
+ini_set(“display_errors”, 0 );
+$msg= $_GET['msg'];
+?>
+<?php if($msg=='enviado'){  ?>
+<div class="alert alert-success">
+  <strong>Obrigado.</strong> Recebemos seu email, em breve responderemos!
+</div>
+<?php }  ?>
+
+
+
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- SITE TITLE -->
+    <title>Big Bang Tecnologia</title>
+
+    <!-- =========================
+       Meta Information
+    ==============================
+    <meta name="description" content="KreFolio - Startup Agency Landing Page Template">
+    <meta name="keywords" content="KreFolio, KreFolio html template, Free Bootstrap template, Responsive onepage template">
+    <meta name="author" content="Zahidul Hossain @choyan">
+
+
+    <!-- =========================
+       favicon and app touch icon
+    ============================== -->
+    <link rel="shortcut icon" href="aa.png"/>
+    <link rel="apple-touch-icon" href="aa.png">
+
+
+    <!-- =========================
+       Bootstrap and animation
+    ============================== -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- =========================
+       Fonts, typography and icons
+    ============================== -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/typography.css">
+
+    <!-- =========================
+       Carousel, lightbox and circle generator
+    ============================== -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo-lightbox-default.css">
+    <link rel="stylesheet" href="css/jquery.circliful.css">
+
+    <!-- ***** Custom Stylesheet ***** -->
+    <link rel="stylesheet" href="css/main-green.css">
+
+    <!-- ***** Responsive fixes ***** -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Header scripts -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/queryloader2.min.js"></script>
+
+    <!-- =========================
+       Preloader
+    ============================== -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            "use strict";
+            new QueryLoader2(document.querySelector("body"), {
+                barColor: "#00ab66",
+                backgroundColor: "#111",
+                percentage: true,
+                barHeight: 1,
+                minimumTime: 200,
+                fadeOutTime: 1000
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- =========================
+       Fullscreen menu
+    ============================== -->
+    <div class="mobilenav">
+        <ul>
+            <li data-rel="#header">
+                <span class="nav-label">Bem-Vindo</span>
+            </li>
+            <li data-rel="#about-us">
+                <span class="nav-label">Mundo BBT</span>
+            </li>
+            <li data-rel="#why-choose-us">
+                <span class="nav-label">Nossos Serviços</span>
+            </li>
+            <li data-rel="#processes">
+                <span class="nav-label">Passo a Passo</span>
+            </li>
+            <li data-rel="#about-us2">
+                <span class="nav-label">Converse Conosco</span>
+            </li>
+            <li data-rel="#portfolio">
+                <span class="nav-label">Portfólio</span>
+            </li>
+            <li data-rel="#footer">
+                <span class="nav-label">Volte Sempre</span>
+            </li>
+        </ul>
+    </div>  <!-- *** end Full Screen Menu *** -->
+
+    <!-- *****  hamburger icon ***** -->
+    <a href="javascript:void(0)" class="menu-trigger">
+       <div class="hamburger">
+         <div class="menui top-menu"></div>
+         <div class="menui mid-menu"></div>
+         <div class="menui bottom-menu"></div>
+       </div>
+    </a>
+
+
+    <!-- =========================
+       Header
+    ============================== -->
+    <header id="header">
+        <div id="myCarousel" class="carousel slide">
+
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+
+                <!-- *****  Logo ***** -->
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="img/logo-header.png" style=" margin-top:-25px;" alt="">
+                    </a>
+                </div>
+
+                <!-- =========================
+                   Header item 1
+                ============================== -->
+
+
+
+                    <div class="fill" style="background-image:url('img/slider/slider-4.jpg');">
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="light mab-none">Sua<strong class="bold-text"> Empresa</strong> Integrada </h1>
+                        <h1 class="light margin-bottom-medium mat-none">No mundo <strong class="bold-text">digital</strong></h1>
+                        <p class="light margin-bottom-medium2">A criação do seu site nas mãos certas! </p>
+                        <div class="call-button">
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                <div class="col-md-4 col-sm-4">
+                                    <a href="#processes" class="button internal-link bold-text light hvr-grow" data-rel="#processes">Quero Criar Meu Site Agora!</a>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <a href="#about-us" class="button internal-link bold-text main-bg hvr-grow" data-rel="#about-us">Big Bang Tecnologia?</a>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <a href="#portfolio" class="button internal-link bold-text light hvr-grow" data-rel="#portfolio">Nossos Desenvolvimentos</a>
+                                </div>
+                              </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+
+        </div>
+    </header> <!-- *** end Header *** -->
+
+    <!-- =========================
+       About Us
+    ============================== -->
+    <section id="about-us" class="about-us">
+        <div class="overlay">
+            <div class="container padding-top-large">
+                <h2>
+                    <strong class="bold-text">Um Pouco</strong>
+                    <span class="light-text main-color">do Mundo BBT</span>
+                </h2>
+                <div class="line main-bg"></div>
+                <div class="row margin-bottom-medium">
+                    <div class="col-md-7">
+                        <div class="jumbo-text light-text margin-top-medium wow slideInLeft" data-wow-duration="2s">
+                            "A tecnologia move o <strong class="bold-text"> mundo</strong>
+                            Nós movemos ela <strong class="bold-text"> até você</strong>"
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/about-side-side.png" alt="About Us Big Image" class="center-block img-responsive">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="margin-bottom-medium2 wow slideInUp">Nós da Big Bang acreditamos em um mundo onde todas as pessoas estão sempre conectadas, com essa realidade cada
+                  vez mais próxima de nós, devemos nos preparar. A empresa que não está na internet ainda, ela praticamente não existe nesse futuro próximo, e é isso que
+                    motiva a existir, somos o elo da pequena empresa que ainda não existe no mundo digital com a criação, desenvolvimento e manutenção de sua vida na web.
+                </p>
+
+
+            </div>
+
+        </div>
+    </section> <!-- *** end About Us *** -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container margin-top-large">
+            <h2>
+                Em que
+                <strong class="bold-text">Podemos</strong>
+                <span class="light-text main-color">Te ajudar</span>
+            </h2>
+            <div class="line main-bg margin-bottom-large"></div>
+
+            <div class="row text-center">
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow slideInLeft">
+                        <div class="icon"><i class="fa fa-pencil-square-o"></i></div>
+                        <h4><strong>Layout</strong></h4>
+                        <p>Criação de layout a partir de briefing com o cliente, análise de seu produto e posicionamento no mercado</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow fadeInUp">
+                        <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                        <h4><strong>Logotipo</strong></h4>
+                        <p>O logo é o seu negócio em uma imagem, por isso criamos o seu com responsabilidade e criatividade</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service wow slideInRight">
+                        <div class="icon"><i class="icon-mobile"></i></div>
+                        <h4><strong>Responsividade</strong></h4>
+                        <p>Com o mercado de mobile em crescimento constante, desenvolvemos sites ajustáveis a todas as telas</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow slideInLeft">
+                        <div class="icon"><i class="fa fa-file-code-o"></i></div>
+                        <h4><strong>Codificação</strong></h4>
+                        <p>Você já tem seu layout pronto? transformamos seu desenho em site</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow fadeInUp">
+                        <div class="icon"><i class="fa fa-database"></i></div>
+                        <h4><strong>Hospedagem</strong></h4>
+                        <p>Não sabe como hospedar seu site? Sem problemas, nós cuidamos da hospedagem e manutenção</p>
+                    </div>
+                </div>
+
+                <!-- *****  Service Single ***** -->
+                <div class="col-md-4">
+                    <div class="service wow slideInRight">
+                        <div class="icon"><i class="fa fa-mortar-board"></i></div>
+                        <h4><strong>Qualidade</strong></h4>
+                        <p>Profissionais competêntes e capacitados com esperiência na area de desenvolvimento web</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                      <div class="container margin-top-large"></div>
+            </div> <!-- *** end row *** -->
+        </div> <!-- *** end container *** -->
+    </section> <!-- *** end Why Choose Us *** -->
+
+
+    <!-- =========================
+       Our Skills
+    ==============================
+    <section id="our-skills" class="our-skills">
+        <div class="container padding-top-large">
+            <h2>
+                Our
+                <strong class="bold-text">Skills</strong>
+                <span class="light-text main-color">Are</span>
+            </h2>
+            <div class="line main-bg margin-bottom-medium"></div>
+            <div class="row">
+                <div class="col-md-7">
+                    <ul class="skill-bar">
+                        <li>
+                            <p>Print Design</p>
+                            <div class="wrapper"><span data-width="90"></span></div>
+                        </li>
+                        <li>
+                            <p>Web Design</p>
+                            <div class="wrapper"><span data-width="80"></span></div>
+                        </li>
+                        <li>
+                            <p>Mobile App Design</p>
+                            <div class="wrapper"><span data-width="85"></span></div>
+                        </li>
+                        <li>
+                            <p>Creativity</p>
+                            <div class="wrapper"><span data-width="65"></span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/skill-bg.jpg" class="center-block img-responsive" alt="Our Skills are excellent">
+                </div>
+                <div class="clearfix"></div>
+            </div> <!-- *** end row ***
+        </div> <!-- *** end container *** -
+    </section> <!-- *** end Our Skills *** -->
+
+
+    <!-- =========================
+       Processes
+    ============================== -->
+    <section id="processes" class="processes">
+        <div class="overlay">
+            <div class="container padding-large">
+                <div class="row">
+                    <div class="col-md-5 text-center process-interactive wow fadeInLeft" style="margin-top: 50px;" data-wow-duration="2s">
+                        <div class="process-bar main-bg discussion">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="process-bar right check">
+                            <i class="icon-check"></i>
+                        </div>
+                        <div class="lines"></div>
+                        <div class="process-bar main-bg idea">
+                            <i class="icon-discussion"></i>
+                        </div>
+                        <div class="process-bar right office">
+                            <i class="fa fa-code"></i>
+                        </div>
+                    </div> <!-- *** end col-md-5 *** -->
+                    <div class="col-md-7">
+
+                        <!-- *****  Single feature ***** -->
+                        <div class="feature wow fadeInUp" data-wow-delay=".2s">
+                            <div class="icon-container pull-left">
+                                <span class="fa fa-envelope"></span>
+                            </div>
+                            <div class="description text-left pull-right">
+                                <h4><strong>O que você precisa?</strong></h4>
+                                <p> Entre em contato por email, whatsapp ou pelo celular, dizendo suas necessidades. Após isso, vamos dizer qual os serviços que você precisa, e quanto isso vai custar, tudo claro e transparente.
+
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <!-- *****  Single feature ***** -->
+                        <div class="feature wow fadeInUp" data-wow-delay=".3s">
+                            <div class="icon-container pull-left">
+                                <span class="icon-discussion"></span>
+                            </div>
+                            <div class="description text-left pull-right">
+                                <h4><strong>Reunião Briefing</strong></h4>
+                                <p>
+                                Reunião presencial ou pela internet, como ficar melhor pra você! Colhetamos mais alguns dados do projeto, e apresentamos algumas ideias.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <!-- *****  Single feature ***** -->
+                        <div class="feature wow fadeInUp" data-wow-delay=".4s">
+                            <div class="icon-container pull-left">
+                                <span class="fa fa-code"></span>
+                            </div>
+                            <div class="description text-left pull-right">
+                                <h4><strong>Desenvolvimento</strong></h4>
+                                <p>Nessa etapa é que as coisas começam a ser feitas realmente, seja um logotipo, ou a codificação de um site completo, nessa etapa que tudo acontece.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="feature wow fadeInUp" data-wow-delay=".4s">
+                            <div class="icon-container pull-left">
+                                <span class="icon-check"></span>
+                            </div>
+                            <div class="description text-left pull-right">
+                                <h4><strong>Entrega</strong></h4>
+                                <p>Quando acontece a validação do serviço, caso algo não esteja alinhado, voltamos para a segunda ou terceira etapa.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div> <!-- *** end col-md-7 *** -->
+                </div>
+            </div>
+        </div>
+    </section> <!-- *** end Processes *** -->
+
+        <!-- =========================
+           Send Message
+        ============================== -->
+        <section id="about-us2" class="about-us text-center">
+            <div class="overlay">
+                <div class="container padding-top-large">
+                  <h2>
+                      Entre em
+                      <strong class="bold-text">Contato</strong>
+                  </h2>
+                      <div class="line main-bg" style="background:#464646; margin: 15px auto 45px"></div>
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                  <form class="form" method="post" action="envia_email.php">
+                                        <div class="row">
+                                            <div class="col-md-6">
+  					                                       <h4 class="bold-text" style="font-weight: 700; font-size:20px; color:#6b6b6b"><span>Informações</span></h4>
+                                                   <div class="line main-bg" style="background:#ccc; margin: 15px auto 45px"></div>
+  					                                          <div class="hr1" style="margin-bottom:30px;"></div>
+                                              					<ul class="icons-list">
+                                              							<li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> bigbangtecnologia@gmail.com</li>
+                                                             <div class="hr1" style="margin-bottom:20px;"></div>
+                                              						<li><i class="fa fa-mobile"></i> <strong>Whatsapp</strong> (51) 9443-0440</li>
+                                                             <div class="hr1" style="margin-bottom:20px;"></div>
+                                              						<li><i class="fa fa-facebook"></i> <strong>Facebook</strong><a href="https://www.facebook.com/thebigbangtecnologia"> Curta Nossa Página</a></li>
+                                                             <div class="hr1" style="margin-bottom:20px;"></div>
+                                                             <li><i class="fa fa-twitter"></i> <strong>Twitter</strong><a href="https://twitter.com/bigbangpoa"> Siga Nossa Página</a></li>
+                                              					</ul>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="form-control" name="nome" placeholder="Digite seu nome">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input type="email" class="form-control" name="email" placeholder="Digite seu email">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="form-control" name="titulo" placeholder="Título do seu projeto">
+                                            </div>
+                                            <div class="form-group col-md-12 mab-none">
+                                                <textarea rows="6" class="form-control" name="descricao" placeholder="Digite detalhes do seu projeto"></textarea>
+                                            </div>
+                                            <div class="form-group col-md-12 " style="margin-top: 25px;">
+
+                                                <input class="button bold-text main-bg" type="submit" style="background:#464646;"></input>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </form>
+                                </div> <!-- *** end modal-body *** -->
+                            </div> <!-- *** end modal-content *** -->
+                    </div>
+                  </div>
+              </div>
+            </section>
+
+
+
+
+
+    <!-- =========================
+       Portfolio
+    ============================== -->
+
+    <section id="portfolio" class="portfolio text-center" style="padding-top:50px;">
+        <div class="container margin-bottom-medium">
+            <div class="row margin-bottom-medium">
+                <h2 style="margin-top:50px">Nossos<strong class="main-color bold-text"> Projetos</strong>
+                </h2>
+                <div class="line main-bg"></div>
+
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="subtitle">Aqui estão alguns de nossos projetos</div>
+                </div>
+            </div> <!-- *** end row *** -->
+
+            <!-- *****  Portfolio Filters ***** -->
+            <div class="filters">
+                <ul class="wow lightSpeedIn">
+                    <li><a href="#" data-filter="*" class="active"><i class="icon-grid"></i></a></li>
+                    <li><a href="#" data-filter=".opinion">Opinion</a></li>
+                    <li><a href="#" data-filter=".lnrelogio">LN Relógio Ponto</a></li>
+                    <li><a href="#" data-filter=".dticzando">DticZando</a></li>
+                </ul>
+            </div> <!-- *** end filters *** -->
+        </div> <!-- *** end container *** -->
+
+        <!-- *****  Portfolio  wrapper ***** -->
+        <div class="portfolio-wrapper margin-top-medium">
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item opinion">
+                <div class="portfolio">
+                    <a href="img/portfolio/1.png" data-lightbox-gallery="portfolio">
+                        <img src="img/portfolio/13.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                        <div class="portfolio-overlay hvr-rectangle-out">
+                            <h2 class="margin-bottom-small">
+                            Ver
+                                <strong class="white-color bold-text">Opinion</strong>
+                            </h2>
+                            <div class="button">Detalhes</div>
+                        </div><!-- END PORTFOLIO OVERLAY -->
+                    </a>
+               </div>
+            </div> <!-- *** end portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item opinion">
+               <div class="portfolio">
+                  <a href="img/portfolio/2.png" data-lightbox-gallery="portfolio">
+                    <img src="img/portfolio/14.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            Ver
+                            <strong class="white-color bold-text">Opinion</strong>
+                        </h2>
+                        <div class="button">Detalhes</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item opinion">
+               <div class="portfolio">
+                  <a href="img/portfolio/3.png" data-lightbox-gallery="portfolio">
+                    <img src="img/portfolio/15.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            Ver
+                            <strong class="white-color bold-text">Opinion</strong>
+                        </h2>
+                        <div class="button">Detalhes</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item opinion">
+               <div class="portfolio">
+                  <a href="img/portfolio/4.png" data-lightbox-gallery="portfolio">
+                    <img src="img/portfolio/16.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            Ver
+                            <strong class="white-color bold-text">Opinion</strong>
+                        </h2>
+                        <div class="button">Detalhes</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item lnrelogio">
+               <div class="portfolio">
+                  <a href="img/portfolio/5.png" data-lightbox-gallery="portfolio">
+                    <img src="img/portfolio/17.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            Ver
+                            <strong class="white-color bold-text">Ln Relógios Ponto</strong>
+                        </h2>
+                        <div class="button">Detalhes</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item lnrelogio">
+               <div class="portfolio">
+                  <a href="img/portfolio/6.png" data-lightbox-gallery="portfolio">
+                    <img src="img/portfolio/18.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            Ver
+                            <strong class="white-color bold-text">Ln Relógios Ponto</strong>
+                        </h2>
+                        <div class="button">Detalhes</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item lnrelogio">
+               <div class="portfolio">
+                  <a href="img/portfolio/7.png" data-lightbox-gallery="portfolio">
+                    <img src="img/portfolio/19.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                            Ver
+                            <strong class="white-color bold-text">Ln Relógios Ponto</strong>
+                        </h2>
+                        <div class="button">Detalhes</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item lnrelogio">
+               <div class="portfolio">
+                  <a href="img/portfolio/8.png" data-lightbox-gallery="portfolio">
+                    <img src="img/portfolio/20.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                    <div class="portfolio-overlay hvr-rectangle-out">
+                        <h2 class="margin-bottom-small">
+                          Ver
+                            <strong class="white-color bold-text">Ln Relógios Ponto</strong>
+                        </h2>
+                        <div class="button">Detalhes</div>
+                    </div><!-- END PORTFOLIO OVERLAY -->
+                  </a>
+               </div>
+            </div> <!-- *** end  portfolio-item *** -->
+
+            <!-- =========================
+               Portfolio item
+            ============================== -->
+            <div class="portfolio-item dticzando">
+                <div class="portfolio">
+                    <a href="img/portfolio/9.png" data-lightbox-gallery="portfolio">
+                        <img src="img/portfolio/21.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                        <div class="portfolio-overlay hvr-rectangle-out">
+                            <h2 class="margin-bottom-small">
+                                Ver
+                                <strong class="white-color bold-text">DticZando</strong>
+                            </h2>
+                            <div class="button">Detalhes</div>
+                        </div><!-- END PORTFOLIO OVERLAY -->
+                    </a>
+               </div>
+            </div>
+
+            <div class="portfolio-item dticzando">
+                <div class="portfolio">
+                    <a href="img/portfolio/12.png" data-lightbox-gallery="portfolio">
+                        <img src="img/portfolio/24.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                        <div class="portfolio-overlay hvr-rectangle-out">
+                            <h2 class="margin-bottom-small">
+                                Ver
+                                <strong class="white-color bold-text">DticZando</strong>
+                            </h2>
+                            <div class="button">Detalhes</div>
+                        </div><!-- END PORTFOLIO OVERLAY -->
+                    </a>
+               </div>
+            </div>
+
+            <div class="portfolio-item dticzando">
+                <div class="portfolio">
+                    <a href="img/portfolio/10.png" data-lightbox-gallery="portfolio">
+                        <img src="img/portfolio/22.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                        <div class="portfolio-overlay hvr-rectangle-out">
+                            <h2 class="margin-bottom-small">
+                                Ver
+                                <strong class="white-color bold-text">DticZando</strong>
+                            </h2>
+                            <div class="button">Detalhes</div>
+                        </div><!-- END PORTFOLIO OVERLAY -->
+                    </a>
+               </div>
+            </div>
+
+            <div class="portfolio-item dticzando">
+                <div class="portfolio">
+                    <a href="img/portfolio/11.png" data-lightbox-gallery="portfolio">
+                        <img src="img/portfolio/23.png" alt="Portfolio 1"/><!-- END PORTFOLIO IMAGE -->
+                        <div class="portfolio-overlay hvr-rectangle-out">
+                            <h2 class="margin-bottom-small">
+                                Ver
+                                <strong class="white-color bold-text">DticZando</strong>
+                            </h2>
+                            <div class="button">Detalhes</div>
+                        </div><!-- END PORTFOLIO OVERLAY -->
+                    </a>
+               </div>
+            </div>
+        </div>
+    <!-- *** end  portfolio-wrapper *** -->
+
+    </section> <!-- *** end Portfolio *** -->
+
+
+    <!-- =========================
+       We are  hiring
+    ============================== -->
+
+
+    <!-- =========================
+       Twitter
+    ==============================
+    <section id="twitter" class="twitter">
+        <div class="overlay">
+            <div class="container padding-large text-center">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="icon hvr-grow">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <div class="tweet-text" id="tweets">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- *** end Twitter *** -->
+
+
+
+
+
+    <!-- =========================
+       Footer
+    ============================== -->
+    <footer id="footer" class="footer">
+        <div class="container padding-large text-center">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <figure class="margin-bottom-medium">
+                        <img src="img/logo-header2.png" style=" margin-top:-25px;" alt="">
+                    </figure>
+                    <p class="margin-bottom-medium">Obrigado por ter nos visitado, logo á baixo temos outros meios de contatos e alguns de nossos parceiros, fique a vontade para um contato mais pessoal ou conhecer outros de nossos projetos.</p>
+
+                    <!-- =========================
+                       Social icons
+                    ============================== -->
+                    <ul class="social margin-bottom-medium">
+                        <li class="facebook hvr-pulse"><a href="https://www.facebook.com/angelo.soldati.7"><i class="fa fa-facebook"></i></a></li>
+                        <li class="youtube hvr-pulse"><a href="https://www.youtube.com/channel/UCCdjJsJYZQqYwXFD3tJ2W3w"><i class="fa fa-youtube"></i></a></li>
+                        <li class="instagram hvr-pulse"><a href="https://www.facebook.com/Infliix/?fref=ts"><i class="fa fa-instagram"></i></a></li>
+
+                        <li class="twitter hvr-pulse"><a href="https://twitter.com/tingracio"><i class="fa fa-twitter"></i></a></li>
+                        <li class="facebook hvr-pulse"><a href="https://www.facebook.com/vinicius.ingracio?fref=ts"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twitter hvr-pulse"><a href="https://viniciusingracio.com.br"><i class="fa fa-at"></i></a></li>
+
+
+
+                    </ul>
+                    <p class="copyright">
+                        &copy; Copyright 2016 Big Bang Tecnologia - Todos Direitos Reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- *** end Footer *** -->
+
+    <!-- =========================
+       Back to top button
+    ==============================
+    <div class="back-to-top" data-rel="header">
+        <i class="icon-up"></i>
+    </div>
+
+    <!-- =========================
+     JavaScripts
+    ============================== -->
+    <script src="js/vendor/jquery-1.11.1.js"></script>
+    <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false"></script>
+    <script src="js/twitterFetcher_min.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/jquery.circliful.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
